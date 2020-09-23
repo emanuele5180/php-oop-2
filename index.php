@@ -5,22 +5,35 @@
 
     public $lato;
 
-    public function __construct($lato){
+    function __construct($lato){
 
-      public $this -> lato = $lato;
+      $this -> lato = $lato;
 
 
 
     }
 
-    public function __toString(){
+    public function getArea(){
 
-      return $this -> lato = $lato * $this -> lato = $lato;
+      return $this -> lato  * $this -> lato;
+
+    }
+
+    public function getPeri(){
+      return 4 * $this -> lato;
+    }
+
+    public function __toString(){
+      return "Area del quadrato: ". $this -> getArea() . "<br>".
+             "Perimetro del quadrato: " . $this -> getPeri() . "<br>";
+
     }
   }
 
   $square1 = new Square(5);
   echo $square1;
+
+  
 
 
 
