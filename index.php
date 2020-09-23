@@ -7,7 +7,7 @@
 
     public function __construct($lato){
 
-      $this -> lato = $lato;
+      public $this -> lato = $lato;
 
 
 
