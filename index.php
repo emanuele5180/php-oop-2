@@ -35,8 +35,8 @@
 
   class Cube extends Square{
 
-    function __construct() {
-      parent:: __construct();
+    public function __construct($lato) {
+      parent::__construct($lato);
     }
 
     public function getArea(){
@@ -50,7 +50,7 @@
 
     public function __toString() {
       return "Volume del cubo: " . $this -> getArea() . "<br>" .
-             "Superficie del cubo: " . this -> getPeri() . "<br>";
+             "Superficie del cubo: " . $this -> getPeri() . "<br>";
     }
 
 
