@@ -35,6 +35,10 @@
 
   class Cube extends Square{
 
+    function __construct() {
+      parent:: __construct();
+    }
+
     public function getArea(){
       return $this -> lato * $this -> lato * $this -> lato;
 
