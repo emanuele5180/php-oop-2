@@ -33,8 +33,26 @@
   $square1 = new Square(5);
   echo $square1;
 
-  
+  class Cube extends Square{
 
+    public function getArea(){
+      return $this -> lato * $this -> lato * $this -> lato;
+
+
+    }
+    public function getPeri() {
+      return 6 * $this -> lato * $this -> lato;
+    }
+
+    public function __toString() {
+      return "Volume del cubo: " . $this -> getArea() . "<br>" .
+             "Superficie del cubo: " . this -> getPeri() . "<br>";
+    }
+
+
+  }
+  $cube1 = new Cube(10);
+  echo $cube1;
 
 
 
